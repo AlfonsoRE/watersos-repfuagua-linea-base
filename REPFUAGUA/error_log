@@ -1,0 +1,41 @@
+[25-Jan-2021 17:21:17 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:23:09 UTC] PHP Notice:  Undefined index: usuario in /home/itsavedu/reporfuagua.itsav.edu.mx/navbarAdmin.php on line 22
+[15-May-2021 03:23:52 UTC] PHP Notice:  Undefined index: usuario in /home/itsavedu/reporfuagua.itsav.edu.mx/navbarAdmin.php on line 22
+[15-May-2021 03:25:16 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:25:33 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:25:38 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:25:42 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:25:46 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:00 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:04 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:07 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:10 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:13 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:21 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:23 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:26 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:29 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:32 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:36 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:48 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:26:51 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:35:47 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:37:05 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:37:42 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:37:51 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:38:05 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:38:10 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:38:15 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:38:20 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:38:27 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:38:35 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:38:42 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:38:49 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 03:38:53 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[15-May-2021 19:00:13 UTC] PHP Notice:  Undefined index: usuario in /home/itsavedu/reporfuagua.itsav.edu.mx/navbarAdmin.php on line 22
+[21-Sep-2021 19:17:34 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[21-Sep-2021 19:17:36 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[22-Sep-2021 00:56:16 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[22-Sep-2021 00:56:28 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41
+[22-Sep-2021 16:05:12 UTC] PHP Notice:  Undefined index: usuario in /home/itsavedu/reporfuagua.itsav.edu.mx/navbarAdmin.php on line 22
+[22-Sep-2021 16:05:12 UTC] PHP Warning:  mysql_close() expects parameter 1 to be resource, object given in /home/itsavedu/reporfuagua.itsav.edu.mx/verimagen.php on line 41

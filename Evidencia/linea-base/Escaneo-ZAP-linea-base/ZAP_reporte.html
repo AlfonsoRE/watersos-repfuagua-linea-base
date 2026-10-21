@@ -1,0 +1,5212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP por Informe de Escaneo Checkmarx</title>
+<link
+	href="ZAP_reporte/normalize/normalize.css" rel="stylesheet">
+<link
+	href="ZAP_reporte/themes/original/main.css" rel="stylesheet">
+<link
+	href="ZAP_reporte/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP por Informe de Escaneo Checkmarx</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="ZAP_reporte/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on mié 21 oct 2026, at 10:57:26</span>
+		</p>
+		<p>ZAP Versión: 2.17.0</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+							<li><a
+								href="#insights">Insights</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Medio</span>, <span>Confidence</span>=<span
+									class="confidence-level">Baja</span> <span>(1)</span></a></li>
+							  
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Alta</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(6)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+									class="confidence-level">Media</span> <span>(2)</span></a></li>
+							
+							
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">http://localhost</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">Alto</span>, <span class="risk-level">Medio</span>, <span class="risk-level">Bajo</span>, <span class="risk-level">Informativo</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">Confirmado por Usuario</span>, <span class="confidence-level">Alta</span>, <span class="confidence-level">Media</span>, <span class="confidence-level">Baja</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">Confirmado por Usuario</span>, <span class="confidence-level">Alta</span>, <span class="confidence-level">Media</span>, <span class="confidence-level">Baja</span>, <span class="confidence-level">Falso positivo</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">Confirmado por Usuario</th>
+							<th scope="col">Alta</th>
+							<th scope="col">Media</th>
+							<th scope="col">Baja</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">Alto</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0,0 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medio</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Bajo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+							<td><span>6</span><br> <span
+								class="additional-info-percentages">(40,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>8</span><br> <span class="additional-info-percentages">(53,3 %)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informativo</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>2</span><br> <span class="additional-info-percentages">(13,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0,0 %)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(26,7 %)</span></td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(66,7 %)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+							<td><span>15</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>Alto</span><br>  <span
+									class="additional-info-percentages">(= Alto)</span>  
+							</th>
+							<th scope="col">
+								<span>Medio</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medio)</span> 
+							</th>
+							<th scope="col">
+								<span>Bajo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Bajo)</span> 
+							</th>
+							<th scope="col">
+								<span>Informativo</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informativo)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">http://localhost</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(5)</span></td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(13)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(15)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Ausencia de Tokens Anti-CSRF</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Cabecera Content Security Policy (CSP) no configurada</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Divulgación de error de aplicación</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Falta atributo de integridad de recursos secundarios</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(26,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Falta de cabecera Anti-Clickjacking</a></th>
+							<td class="risk-level">Medio</td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(26,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Cookie Sin Flag HttpOnly</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Cookie sin el atributo SameSite</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(6,7 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-8">El servidor filtra información de versión a través del campo &quot;Server&quot; del encabezado de respuesta HTTP</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-9">Falta encabezado X-Content-Type-Options</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-10">Fuga de información en el Banner de la Página</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(33,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-11">Gran redirección detectada (posible fuga de información confidencial)</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(20,0 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-12">Inclusión de archivos fuente JavaScript entre dominios</a></th>
+							<td class="risk-level">Bajo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-13">Aplicación Web Moderna</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-14">Respuesta de Gestión de Sesión Identificada</a></th>
+							<td class="risk-level">Informativo</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(13,3 %)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>15</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+			
+			<section
+				id="insights">
+				<h3 class="left-header">Insights</h3>
+				
+				<table class="insights-table">
+						<caption>
+						<p>This table shows information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.</p>
+					</caption>
+					<thead>
+					<tr>
+						<th scope="col">Level</th>
+						<th scope="col">Razón</th>
+						<th scope="col">Site</th>
+						<th scope="col">Descripción</th>
+						<th scope="col">Statistic</th>
+					</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 2xx</div>
+						</td>
+						<td align="center">
+							<div>18 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 3xx</div>
+						</td>
+						<td align="center">
+							<div>60 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of responses with status code 4xx</div>
+						</td>
+						<td align="center">
+							<div>20 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type font/woff</div>
+						</td>
+						<td align="center">
+							<div>4 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/jpeg</div>
+						</td>
+						<td align="center">
+							<div>21 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type image/x-icon</div>
+						</td>
+						<td align="center">
+							<div>4 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/css</div>
+						</td>
+						<td align="center">
+							<div>4 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with content type text/html</div>
+						</td>
+						<td align="center">
+							<div>65 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method GET</div>
+						</td>
+						<td align="center">
+							<div>95 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Percentage of endpoints with method POST</div>
+						</td>
+						<td align="center">
+							<div>4 %</div>
+						</td>
+						</tr>
+					
+						<tr>
+						<td class="risk-0">
+							<div>Información</div>
+						</td>
+						<td>
+							<div>Informativo</div>
+						</td>
+						<td>
+							<div>http://localhost</div>
+						</td>
+						<td>
+							<div>Count of total endpoints</div>
+						</td>
+						<td align="center">
+							<div>23   </div>
+						</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Cabecera Content Security Policy (CSP) no configurada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/css/bootstrap.min.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La Política de seguridad de contenido (CSP) es una capa adicional de seguridad que ayuda a detectar y mitigar ciertos tipos de ataques, incluidos Cross Site Scripting (XSS) y ataques de inyección de datos. Estos ataques se utilizan para todo, desde el robo de datos hasta la desfiguración del sitio o la distribución de malware. CSP proporciona un conjunto de encabezados HTTP estándar que permiten a los propietarios de sitios web declarar fuentes de contenido aprobadas que los navegadores deberían poder cargar en esa página; los tipos cubiertos son JavaScript, CSS, marcos HTML, fuentes, imágenes y objetos incrustados como applets de Java, ActiveX, archivos de audio y video.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (318 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/css/bootstrap.min.css HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/RepWatOriginal/REPFUAGUA/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que su servidor web, servidor de aplicaciones, balanceador de carga, etc. esté configurado para establecer la cabecera Content-Security-Policy.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Falta atributo de integridad de recursos secundarios</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/ver.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/345.html">CWE-345</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Falta el atributo de integridad en una etiqueta de script o enlace servida por un servidor externo. La etiqueta de integridad evita que un atacante que haya obtenido acceso a este servidor inyecte un contenido malicioso.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (362 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/ver.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/RepWatOriginal/REPFUAGUA/Acercade.php
+Cookie: PHPSESSID=90tcucckf7mjturpm5g0d29s5v
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (337 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Location: ./index.php
+Content-Type: text/html; charset=UTF-8
+content-length: 20489
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (20489 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+	&lt;head&gt;
+&lt;meta http-equiv=&quot;Expires&quot; content=&quot;0&quot;&gt;
+&lt;meta http-equiv=&quot;Last-Modified&quot; content=&quot;0&quot;&gt;
+&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-cache, mustrevalidate&quot;&gt;
+&lt;meta http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;&gt;
+&lt;title&gt;.: Admin :.&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+		&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js&quot;&gt;&lt;/script&gt;  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css&quot; /&gt;  
+    &lt;script src=&quot;http://code.jquery.com/ui/1.10.3/jquery-ui.js&quot;&gt;&lt;/script&gt;  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css&quot;&gt;
+	&lt;/head&gt;
+	&lt;body background=&quot;fondo1.jpg&quot;&gt;
+	&lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+  &lt;div class=&quot;navbar-header&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-ex1-collapse&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;./menuAdmin.php&quot;&gt;&lt;b&gt;REPFUAGUA&lt;/b&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+        &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+
+        &lt;li class=&quot;dropdown&quot;&gt;
+     &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;./ver.php&quot;&gt;Reporte &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        
+       &lt;/li&gt;
+
+         
+        
+          &lt;li&gt;&lt;a href=&quot;./tabladeregistros.php&quot;&gt;Registro&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        
+        &lt;ul class=&quot;nav navbar-nav navbar-right&quot; style=&quot;padding-left: 200;&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  Undefined array key &quot;usuario&quot; in &lt;b&gt;C:\xampp\htdocs\RepWatOriginal\REPFUAGUA\navbarAdmin.php&lt;/b&gt; on line &lt;b&gt;28&lt;/b&gt;&lt;br /&gt;
+&lt;/a&gt;&lt;/li&gt; 
+          &lt;li&gt;&lt;a href=&quot;./php/cerrarSesion.php&quot;&gt;Salir&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-md-12&quot;&gt;
+&lt;div class=&quot;text-center&quot;&gt;
+  
+  &lt;br&gt;
+  &lt;br&gt;
+
+		&lt;h2&gt;LISTA DE REPORTES &lt;/h2&gt;
+    &lt;/div&gt;
+&lt;!-- Button trigger modal --&gt;
+&lt;form class=&quot;form-inline&quot; role=&quot;search&quot; id=&quot;buscar&quot;&gt;
+      &lt;div class=&quot;form-group&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;s&quot; class=&quot;form-control&quot; placeholder=&quot;Buscar&quot;&gt;
+      &lt;/div&gt;
+      &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;&amp;nbsp;&lt;i class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/i&gt;&amp;nbsp;&lt;/button&gt;
+  &lt;!--&lt;a data-toggle=&quot;modal&quot; href=&quot;#newModal&quot; class=&quot;btn btn-default&quot;&gt;Agregar&lt;/a&gt;--&gt;
+    &lt;/form&gt;
+
+
+ 
+
+  &lt;!--&lt;Fecha Formulario2&gt;--&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-md-5&quot;&gt;
+				&lt;h3 class = &quot;text-primary&quot;&gt;Búsqueda por fechas &lt;/h3&gt;
+				&lt;label&gt;Desde:&lt;/label&gt;
+				&lt;input type = &quot;text&quot; class = &quot;form-control&quot; placeholder = &quot;Inicio&quot; name=&quot;from_date&quot;  id =&quot;from_date&quot;/&gt;
+				&lt;label&gt;Hasta&lt;/label&gt;
+				&lt;input type = &quot;text&quot; class = &quot;form-control&quot; placeholder = &quot;Final&quot; name=&quot;to_date&quot;  id =&quot;to_date&quot;/&gt;
+				&lt;button type = &quot;button&quot; class = &quot;btn btn-primary&quot; name=&quot;filter&quot; id = &quot;filter&quot;&gt;
+        &lt;span class = &quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt; 
+        &lt;button type = &quot;button&quot; id = &quot;reset&quot; class = &quot;btn btn-success&quot;&gt;&lt;span class = &quot;glyphicon glyphicon-refresh&quot;&gt;&lt;span&gt;&lt;/button&gt;
+			&lt;/div&gt;
+
+&lt;br&gt;
+  &lt;!-- Modal --&gt;
+  &lt;div class=&quot;modal fade&quot; id=&quot;newModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;newModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot;&gt;
+      &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;
+          &lt;h4 class=&quot;modal-title&quot;&gt;Agregar&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+&lt;form role=&quot;form&quot; method=&quot;post&quot; id=&quot;agregar&quot;&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;name&quot;&gt;Nombre&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;name&quot; required&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;lastname&quot;&gt;Apellido&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;lastname&quot; required&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;address&quot;&gt;Domicilio&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;address&quot; required&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; name=&quot;email&quot; &gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;phone&quot;&gt;Telefono&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;phone&quot; &gt;
+  &lt;/div&gt;
+
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Agregar&lt;/button&gt;
+&lt;/form&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;&lt;!-- /.modal-content --&gt;
+    &lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+  &lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;div id=&quot;tabla&quot;&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;bootstrap/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;div id=&quot;tabla_fecha&quot;&gt;
+&lt;table class=&quot;table table-bordered table-hover&quot;&gt;
+&lt;thead&gt;
+    &lt;th&gt;Clave Reporte&lt;/th&gt;
+	&lt;th&gt;No. de Contrato&lt;/th&gt;
+	&lt;th&gt;No. Ext&lt;/th&gt;
+	&lt;th&gt;Dirección&lt;/th&gt;
+	&lt;th&gt;Ubicación&lt;/th&gt;
+	&lt;th&gt;Evidencia&lt;/th&gt;
+	&lt;th&gt;Fecha&lt;/th&gt;
+	&lt;th&gt;Descripción&lt;/th&gt;
+	&lt;th&gt;Status&lt;/th&gt;
+	&lt;th&gt;Usuario&lt;/th&gt;
+	&lt;th&gt;Acciones&lt;/th&gt;
+&lt;/thead&gt;
+&lt;tr&gt;
+	&lt;td&gt;TC-01&lt;/td&gt;
+	&lt;td&gt;9999&lt;/td&gt;
+	&lt;td&gt;1&lt;/td&gt;
+	&lt;td&gt;Prueba TC-01&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/999,-999&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=TC-01&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-10-09 00:00:00&lt;/td&gt;
+	&lt;td&gt;Prueba de rango invalido CWE-20&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;TC-01&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-TC-01&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+TC-01).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+TC-01,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;16209&lt;/td&gt;
+	&lt;td&gt;333&lt;/td&gt;
+	&lt;td&gt;3&lt;/td&gt;
+	&lt;td&gt;C. Escolleras 2356, 95272 Las Escolleras, Ver., México&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.7733059,-95.7491928&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=16209&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-10-08 11:51:38&lt;/td&gt;
+	&lt;td&gt;probando el asíncrono &lt;/td&gt;
+	&lt;td&gt;terminado&lt;/td&gt;
+	&lt;td&gt;carlos_pech&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;16209&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-16209&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+16209).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+16209,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;62098&lt;/td&gt;
+	&lt;td&gt;1234&lt;/td&gt;
+	&lt;td&gt;10&lt;/td&gt;
+	&lt;td&gt;C. Escolleras 2356, 95272 Las Escolleras, Ver., México&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.7733059,-95.7491928&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=62098&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-10-08 11:48:16&lt;/td&gt;
+	&lt;td&gt;Se fuga en la calzada&lt;/td&gt;
+	&lt;td&gt;terminado&lt;/td&gt;
+	&lt;td&gt;carlos_pech&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;62098&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-62098&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+62098).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+62098,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;50840&lt;/td&gt;
+	&lt;td&gt;1111&lt;/td&gt;
+	&lt;td&gt;0&lt;/td&gt;
+	&lt;td&gt;C. Escolleras 2356, 95272 Las Escolleras, Ver., México&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.7733295,-95.7491982&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=50840&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-10-08 11:40:20&lt;/td&gt;
+	&lt;td&gt;se fuga el agua abajo del puente &lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;50840&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-50840&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+50840).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+50840,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN009&lt;/td&gt;
+	&lt;td&gt;11502&lt;/td&gt;
+	&lt;td&gt;5&lt;/td&gt;
+	&lt;td&gt;Calle Hidalgo 201, Col. Centro, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.7695,-95.7611&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN009&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-12 12:00:00&lt;/td&gt;
+	&lt;td&gt;Fuga moderada en la union de la toma domiciliaria con la red principal.&lt;/td&gt;
+	&lt;td&gt;en proceso&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN009&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN009&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN009).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN009,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN008&lt;/td&gt;
+	&lt;td&gt;11390&lt;/td&gt;
+	&lt;td&gt;11&lt;/td&gt;
+	&lt;td&gt;Av. Independencia 340, Col. Reforma, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.7726,-95.75764&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN008&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-11 18:05:00&lt;/td&gt;
+	&lt;td&gt;Fuga nocturna, se escucha el agua correr pero no se ve a simple vista de dia.&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;javier_dzul&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN008&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN008&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN008).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN008,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN007&lt;/td&gt;
+	&lt;td&gt;11278&lt;/td&gt;
+	&lt;td&gt;28&lt;/td&gt;
+	&lt;td&gt;Calle Victoria 77, Col. Ojo de Agua, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.76601,-95.76455&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN007&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-10 10:35:00&lt;/td&gt;
+	&lt;td&gt;Fuga leve junto al jardin, ya se reporto antes pero sigue presente.&lt;/td&gt;
+	&lt;td&gt;terminado&lt;/td&gt;
+	&lt;td&gt;javier_dzul&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN007&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN007&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN007).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN007,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN006&lt;/td&gt;
+	&lt;td&gt;11144&lt;/td&gt;
+	&lt;td&gt;2&lt;/td&gt;
+	&lt;td&gt;Calle Guerrero 56, Col. Centro, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.76905,-95.76175&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN006&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-08 14:10:00&lt;/td&gt;
+	&lt;td&gt;Brota agua de la coladera cercana a la esquina, posible tuberia principal danada.&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;monica_uc&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN006&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN006&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN006).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN006,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN005&lt;/td&gt;
+	&lt;td&gt;11023&lt;/td&gt;
+	&lt;td&gt;19&lt;/td&gt;
+	&lt;td&gt;Calle Abasolo 33, Col. La Palma, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.75872,-95.76788&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN005&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-06 09:50:00&lt;/td&gt;
+	&lt;td&gt;Fuga intermitente que solo se nota por las mananas, cerca del medidor.&lt;/td&gt;
+	&lt;td&gt;en proceso&lt;/td&gt;
+	&lt;td&gt;monica_uc&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN005&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN005&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN005).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN005,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN004&lt;/td&gt;
+	&lt;td&gt;10912&lt;/td&gt;
+	&lt;td&gt;7&lt;/td&gt;
+	&lt;td&gt;Calle Morelos 210, Col. Centro, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.76988,-95.76201&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN004&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-05 16:22:00&lt;/td&gt;
+	&lt;td&gt;Fuga importante que esta afectando el pavimento de la calle, se solicita atencion urgente.&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;carlos_pech&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN004&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN004&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN004).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN004,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN003&lt;/td&gt;
+	&lt;td&gt;10789&lt;/td&gt;
+	&lt;td&gt;45&lt;/td&gt;
+	&lt;td&gt;Calle Zaragoza 88, Col. Ojo de Agua, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.76544,-95.7639&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN003&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-04 07:05:00&lt;/td&gt;
+	&lt;td&gt;Fuga pequena en la llave de paso de la calle, poco caudal pero constante.&lt;/td&gt;
+	&lt;td&gt;terminado&lt;/td&gt;
+	&lt;td&gt;carlos_pech&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN003&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN003&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN003).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN003,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN002&lt;/td&gt;
+	&lt;td&gt;10567&lt;/td&gt;
+	&lt;td&gt;3&lt;/td&gt;
+	&lt;td&gt;Av. Independencia 120, Col. Reforma, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.77215,-95.7582&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN002&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-03 11:40:00&lt;/td&gt;
+	&lt;td&gt;Tuberia rota junto a la toma principal, se nota encharcamiento constante.&lt;/td&gt;
+	&lt;td&gt;en proceso&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN002&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN002&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN002).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN002,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN001&lt;/td&gt;
+	&lt;td&gt;10234&lt;/td&gt;
+	&lt;td&gt;12&lt;/td&gt;
+	&lt;td&gt;Calle Hidalgo 45, Col. Centro, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.76931,-95.76147&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN001&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-02 08:15:00&lt;/td&gt;
+	&lt;td&gt;Fuga visible en la banqueta frente al domicilio, el agua corre hacia la calle desde hace dos dias.&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN001&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN001&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN001).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN001,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;TC-04&lt;/td&gt;
+	&lt;td&gt;1111&lt;/td&gt;
+	&lt;td&gt;1&lt;/td&gt;
+	&lt;td&gt;Prueba TC-04&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/0,0&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=TC-04&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;0000-00-00 00:00:00&lt;/td&gt;
+	&lt;td&gt;Prueba de exposicion de errores CWE-209&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;TC-04&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-TC-04&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+TC-04).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+TC-04,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+  &lt;!-- Modal --&gt;
+  &lt;script&gt;
+  	$(&quot;.btn-edit&quot;).click(function(){
+  		id = $(this).data(&quot;id&quot;);
+  		$.get(&quot;./php/formulario.php&quot;,&quot;clave_Reporte=&quot;+id,function(data){
+  			$(&quot;#form-edit&quot;).html(data);
+			  
+  		});
+  		$(&quot;#editModal&quot;).modal(&quot;show&quot;);
+  	});
+
+  &lt;/script&gt;
+  &lt;div class=&quot;modal fade&quot; id=&quot;editModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;editModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot;&gt;
+      &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;
+          &lt;h4 class=&quot;modal-title&quot;&gt;Actualizar&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;div id=&quot;form-edit&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;&lt;!-- /.modal-content --&gt;
+    &lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+  &lt;/div&gt;&lt;!-- /.modal --&gt;&lt;script&gt;
+
+
+$(&quot;#buscar&quot;).submit(function(e){
+  e.preventDefault();
+  $.post(&quot;./php/busqueda.php&quot;,$(&quot;#buscar&quot;).serialize(),function(data){
+    $(&quot;#tabla&quot;).html(data);
+  $(&quot;#buscar&quot;)[0].reset();
+  });
+});
+
+
+
+
+$(&#39;#reset&#39;).click(function(e){
+  location.reload();
+});
+
+
+  $(&quot;#agregar&quot;).submit(function(e){
+    e.preventDefault();
+    $.post(&quot;./php/agregar.php&quot;,$(&quot;#agregar&quot;).serialize(),function(data){
+    });
+    //alert(&quot;Agregado exitosamente!&quot;);
+    $(&quot;#agregar&quot;)[0].reset();
+    $(&#39;#newModal&#39;).modal(&#39;hide&#39;);
+  });
+  $(document).ready(function(){
+    $.datepicker.setDefaults({
+      dateFormat:&#39;yy-mm-dd&#39;
+    });
+    $(function(){
+      $(&quot;#from_date&quot;).datepicker();
+      $(&quot;#to_date&quot;).datepicker();
+    });
+    $(&#39;#filter&#39;).click(function(){
+      var from_date = $(&#39;#from_date&#39;).val();
+      var to_date = $(&#39;#to_date&#39;).val();
+      if(from_date != &#39;&#39; &amp;&amp; to_date != &#39;&#39;){
+        $.ajax({
+          url:&quot;filtro.php&quot;,
+          method:&quot;POST&quot;,
+          data:{from_date:from_date, to_date:to_date},
+          success:function(data){
+            $(&#39;#tabla_fecha&#39;).html(data);
+          }
+        })
+      }else{
+        alert(&quot;Seleccione fecha&quot;);
+      }
+    });
+  });
+&lt;/script&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js&quot;&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Proporcionar un atributo de integridad válido a la etiqueta.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Divulgación de error de aplicación</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/RepWatOriginal/REPFUAGUA/php/logueo.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces">WSTG-v42-ERRH-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling">WSTG-v42-ERRH-01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/550.html">CWE-550</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Esta página contiene un mensaje de error/advertencia que podría revelar información sensible como la ubicación del archivo que produjo la excepción no controlada. Esta información puede ser usada para lanzas futuros ataques contra la aplicación web. La alerta podría ser una falso positivo si el mensaje de error es encontrado dentro de una página de documentación.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (380 bytes)</summary>
+				
+				<pre><code>POST http://localhost/RepWatOriginal/REPFUAGUA/php/logueo.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/RepWatOriginal/REPFUAGUA/
+content-length: 0
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (226 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Location: ../index.php
+Content-Length: 331
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (331 bytes)</summary>
+				
+				<pre><code>&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  Undefined array key &quot;pass&quot; in &lt;b&gt;C:\xampp\htdocs\RepWatOriginal\REPFUAGUA\php\logueo.php&lt;/b&gt; on line &lt;b&gt;5&lt;/b&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Deprecated&lt;/b&gt;:  md5(): Passing null to parameter #1 ($string) of type string is deprecated in &lt;b&gt;C:\xampp\htdocs\RepWatOriginal\REPFUAGUA\php\logueo.php&lt;/b&gt; on line &lt;b&gt;5&lt;/b&gt;&lt;br /&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;b&gt;Warning&lt;/b&gt;:  Undefined array key &quot;pass&quot; in &lt;b&gt;C:\xampp\htdocs\RepWatOriginal\REPFUAGUA\php\logueo.php&lt;/b&gt; on line &lt;b&gt;5&lt;/b&gt;&lt;br /&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Revisar el código de fuente de esta página. Implementación de páginas de error personalizadas. Considerar implementar un mecanismos para proveer una única referencia/identificación de error para el cliente (navegador) mientras insertando los detalles en el sitio del navegador y no exponiéndolos al usuario.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Falta de cabecera Anti-Clickjacking</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La respuesta no protege contra ataques de &quot;ClickJacking&quot;. Debes incluir Content-Security-Policy con la directiva &quot;frame-ancestors&quot; o X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (244 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (200 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Length: 3025
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3025 bytes)</summary>
+				
+				<pre><code>
+  &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; ng-app=&quot;app&quot;&gt;
+&lt;head&gt;
+ &lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+ &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+ &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+ &lt;title&gt;REPFUAGUA&lt;/title&gt;
+ &lt;!-- Bootstrap --&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/bootstrap.min.css&quot;&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/margenes.css&quot;&gt;
+ &lt;script src=&quot;./controlador/jquery.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;./controlador/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;./controlador/angular.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;header&gt;
+ &lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+     &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#myNavbar&quot;&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;                        
+     &lt;/button&gt;
+     &lt;a class=&quot;navbar-brand&quot; href=&quot;index.php&quot;&gt;REPFUAGUA&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+   &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+      
+   &lt;li&gt;&lt;a href=&quot;Acercade.php&quot;&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;head&gt;
+		&lt;title&gt;.: Inicio :.&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+	&lt;/head&gt;
+
+&lt;body background=&quot;fondo.jpeg&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div id=&quot;content&quot;&gt;
+      
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+         &lt;img src=&quot;./fuga.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+      
+      &lt;div class=&quot;text-center &quot;&gt;
+      &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+        &lt;h2&gt;&lt;b&gt;INICIAR SESION&lt;/b&gt;&lt;/h2&gt;
+        &lt;form class=&quot;form-vertical&quot; action=&quot;./php/logueo.php&quot; method=&quot;POST&quot;&gt;
+          &lt;h1&gt; &lt;/h1&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;col-md-5&quot;&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+       &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+              &lt;input id=&quot;nombre&quot; type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;nombre&quot; placeholder=&quot;Nombre de Usuario&quot;
+                required&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;br&gt;
+    &lt;br&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;col-md-5&quot;&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+       &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-lock&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+              &lt;input id=&quot;pass&quot; type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;pass&quot;
+                placeholder=&quot;Contraseña&quot; required&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;div class=&quot;col-md-4&quot;&gt;
+              &lt;br&gt;
+    &lt;br&gt;
+                &lt;button type=&quot;submit&quot;  class=&quot;btn btn-primary&quot;&gt;&lt;span
+                    class=&quot;glyphicon glyphicon-edit&quot;&gt;&lt;/span&gt; Entrar&lt;/button&gt;
+              &lt;/div&gt;
+              
+            &lt;/div&gt;
+            
+       
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Los navegadores web modernos admiten las cabeceras HTTP Content-Security-Policy y X-Frame-Options. Asegúrese de que una de ellas está configurada en todas las páginas web devueltas por su sitio/aplicación.</p>
+
+<p>Si espera que la página esté enmarcada solo por páginas en su servidor (por ejemplo, si forma parte de un FRAMESET), utilice SAMEORIGIN; de lo contrario, si no espera que la página esté enmarcada, utilice DENY. Alternativamente, considere implementar la directiva &quot;frame-ancestors&quot; de la Política de Seguridad de Contenidos.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medio</span>, <span>Confidence</span>=<span
+							class="confidence-level">Baja</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Ausencia de Tokens Anti-CSRF</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery">WSTG-v42-SESS-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A01_2025-Broken_Access_Control/">OWASP_2025_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/352.html">CWE-352</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>No se encontraron tokens Anti-CSRF en formulario de envío HTML.</p>
+
+<p>Una solicutud falsa entre sitios en un ataque que compromete y obliga a una víctima a enviar su solicitud HTTP a un destino objetivo sin su conocimiento o intención para poder realizar una acción como víctima. La causa oculta es la funcionalidad de la aplicación utilizando acciones de URL/formulario que pueden ser adivinados de forma repetible. La naturaleza del ataque es que CSRG explota la confianza que un sitio web proporciona a un usuario. Por el contrario, las cadenas de comandos de los sitios cruzados (XSS) explotan la confianza que un usuario proporciona en un sitio web. Al igual que XSS, los ataques CSRG no son de forma necesaria de sitios cruzados, pero hay la posibilidad de que si pueden serlo. La falsificación de las solicitudes ente los sitios también se conoce como CSRF, XSRG, ataques con un solo clic, montaje de sesión, diputado confundido y navegación en alta mar.</p>
+
+<p>Los ataques de CSRG son muy efectivos en varias situaciones, que incluyen:</p>
+
+<p>*La victima tiene una sesión activa en el sitio de destino.</p>
+
+<p>    *La víctima se autoriza por medio de la autenticación HTTP en el sitio de destino.</p>
+
+<p>    *La víctima se encuentra en la misma red local que el sitio de destino.</p>
+
+<p>CSRF se ha utilizado especialmente para poder realizar una acción contra un sitio objetivo utilizando los privilegios de la víctima, pero se han revelado técnicas recientes para difundir información al obtener el acceso a la respuesta. El riesgo de divulgación de información aumenta de forma drástica cuando el sitio de destino se encuentra vulnerable a XSS, porque XSS se puede utilizar como una plataforma para CSRF, lo que le permite al atacante que opere desde adentro de los líites de la misma política de origen.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>No se ha encontrado ningún token Anti-CSRF [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token, _csrfToken] conocido en el siguiente formulario HTML: [Form 1: &quot;&quot; ].</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (244 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (200 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Length: 3025
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3025 bytes)</summary>
+				
+				<pre><code>
+  &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; ng-app=&quot;app&quot;&gt;
+&lt;head&gt;
+ &lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+ &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+ &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+ &lt;title&gt;REPFUAGUA&lt;/title&gt;
+ &lt;!-- Bootstrap --&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/bootstrap.min.css&quot;&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/margenes.css&quot;&gt;
+ &lt;script src=&quot;./controlador/jquery.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;./controlador/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;./controlador/angular.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;header&gt;
+ &lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+     &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#myNavbar&quot;&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;                        
+     &lt;/button&gt;
+     &lt;a class=&quot;navbar-brand&quot; href=&quot;index.php&quot;&gt;REPFUAGUA&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+   &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+      
+   &lt;li&gt;&lt;a href=&quot;Acercade.php&quot;&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;head&gt;
+		&lt;title&gt;.: Inicio :.&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+	&lt;/head&gt;
+
+&lt;body background=&quot;fondo.jpeg&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div id=&quot;content&quot;&gt;
+      
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+         &lt;img src=&quot;./fuga.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+      
+      &lt;div class=&quot;text-center &quot;&gt;
+      &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+        &lt;h2&gt;&lt;b&gt;INICIAR SESION&lt;/b&gt;&lt;/h2&gt;
+        &lt;form class=&quot;form-vertical&quot; action=&quot;./php/logueo.php&quot; method=&quot;POST&quot;&gt;
+          &lt;h1&gt; &lt;/h1&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;col-md-5&quot;&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+       &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+              &lt;input id=&quot;nombre&quot; type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;nombre&quot; placeholder=&quot;Nombre de Usuario&quot;
+                required&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;br&gt;
+    &lt;br&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;col-md-5&quot;&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+       &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-lock&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+              &lt;input id=&quot;pass&quot; type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;pass&quot;
+                placeholder=&quot;Contraseña&quot; required&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;div class=&quot;col-md-4&quot;&gt;
+              &lt;br&gt;
+    &lt;br&gt;
+                &lt;button type=&quot;submit&quot;  class=&quot;btn btn-primary&quot;&gt;&lt;span
+                    class=&quot;glyphicon glyphicon-edit&quot;&gt;&lt;/span&gt; Entrar&lt;/button&gt;
+              &lt;/div&gt;
+              
+            &lt;/div&gt;
+            
+       
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;form class=&quot;form-vertical&quot; action=&quot;./php/logueo.php&quot; method=&quot;POST&quot;&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Fase: Arquitectura y Diseño</p>
+
+<p>Utilizar una biblioteca o framework verificado y confiable que evite esta vulnerabilidad o proporcione elementos que faciliten evitarla.</p>
+
+<p>Por ejemplo, utilice el paquete anti-CSRG como el CSRGuard de OWASP.</p>
+
+<p>Fase: Implementación</p>
+
+<p>Asegúrese de que su aplicación esté libre de fallas de secuencias de comandos entre sitios, ya que la mayoría de las defensas de CSRF pueden detenerse por alto por medio del uso de secuencias de comandos manejadas por el atacante.</p>
+
+<p>Fase: Arquitectura y Diseño</p>
+
+<p>Origina un nonce único para cada uno de los formularios, coloque el nonce en el formularo y confirme la independencia al obtener el formulario. Asegúrese de que el nonce no sea predecible (CWE-330).</p>
+
+<p>Usted tiene que tener en cuenta que esto puede pasar desapercibido utilizando XSS.</p>
+
+<p>Identificar las operaciones que sean especialmente peligrosas. Cuando el usuario desarrolla una operación peligrosa, envíe una solicitud de confirmación de forma separada para poder garantizar que el usuario tenga la intención de desarrollar esa operación.</p>
+
+<p>Usted tiene que tener en cuenta que esto puede pasar desapercibido utilizando XSS.</p>
+
+<p>Utilice el control de gestión de la sesión de ESAPI.</p>
+
+<p>Este control introduce un elemento para CSRF.</p>
+
+<p>No utilice el método GET para ninguna de las solicitudes que puedan desencadenar un cambio de estado.</p>
+
+<p>Fase: Implementación</p>
+
+<p>Revise que la solicitud se creó en la página esperada. Esto podría quebrar la funcionalidad auténtica, ya que los usuarios o los representantes puede ser que hayan desactivado el envío de Referer por motivos de privacidad.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Alta</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-8">El servidor filtra información de versión a través del campo &quot;Server&quot; del encabezado de respuesta HTTP</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/css/bootstrap.min.css</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>El servidor web/aplicación está filtrando información de versión a través de la cabecera de respuesta HTTP &quot;Server&quot;. El acceso a dicha información puede facilitar a los atacantes la identificación de otras vulnerabilidades a las que está sujeto su servidor web/aplicación.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (318 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/css/bootstrap.min.css HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/RepWatOriginal/REPFUAGUA/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que su servidor web, servidor de aplicaciones, balanceador de carga, etc. está configurado para suprimir la cabecera &quot;Server&quot; o proporcionar detalles genéricos.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-10">Fuga de información en el Banner de la Página</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/sitemap.xml</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server">WSTG-v42-INFO-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>El servidor devolvió una cadena mostró el banner con la versión en el contenido de la respuesta. Estas filtraciones de información pueden permitir a los atacantes centrarse en problemas específicos que afecten al producto y la versión en uso.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Existe la posibilidad de que lo encontrado esté en un valor en los headers, en lugar de en la cadena que coincide en el cuerpo de la respuesta.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (230 bytes)</summary>
+				
+				<pre><code>GET http://localhost/sitemap.xml HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (185 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+Content-Length: 295
+Content-Type: text/html; charset=iso-8859-1
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (295 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;404 Not Found&lt;/title&gt;
+&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;Not Found&lt;/h1&gt;
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80&lt;/address&gt;
+&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Apache/2.4.58</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Configura el servidor para evitar este tipo de fugas de información. Por ejemplo:</p>
+
+<p>En Tomcat, esto se hace mediante la directiva &quot;server&quot; y la implementación de páginas de error personalizadas.</p>
+
+<p>En Apache, esto se hace mediante las directivas &quot;ServerSignature&quot; y &quot;ServerTokens&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Bajo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(6)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(6)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Cookie Sin Flag HttpOnly</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/Acercade.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1004.html">CWE-1004</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Se ha establecido una cookie sin el flag HttpOnly, lo que significa que JavaScript puede acceder a la cookie. Si un script malicioso puede ser ejecutado en esta página, entonces la cookie será accesible y puede ser transmitida a otro sitio. Si se trata de una cookie de sesión, el secuestro de sesión puede ser posible.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (309 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/Acercade.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/RepWatOriginal/REPFUAGUA/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (368 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Set-Cookie: PHPSESSID=90tcucckf7mjturpm5g0d29s5v; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 3646
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3646 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;.: Inicio :.&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+  &lt;div class=&quot;navbar-header&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-ex1-collapse&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;./menuAdmin.php&quot;&gt;&lt;b&gt;REPFUAGUA&lt;/b&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+        &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+
+         
+        &lt;!--  &lt;li&gt;&lt;a href=&quot;./ver.php&quot;&gt;Lista de Reportes&lt;/a&gt;&lt;/li&gt; 
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt; --&gt;
+        &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+       
+        
+          &lt;li&gt;&lt;a href=&quot;./php/cerrarSesion.php&quot;&gt;Atras&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;	&lt;div class=&quot;container&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-12&quot;&gt;
+	&lt;div class=&quot;text-center&quot;&gt;
+	&lt;br&gt;
+    &lt;br&gt;
+			&lt;h1&gt; Cuidado del agua &lt;/h1&gt;
+			&lt;div class=&quot;col-md-3&quot;&gt;
+         &lt;h3 class=&quot;text-justify&quot;&gt; 
+        &lt;/div&gt;
+       &lt;div class=&quot;col-md-6&quot;&gt;
+         &lt;img src=&quot;./agua4.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+      
+	&lt;/div&gt;	
+	&lt;br&gt;
+    &lt;br&gt;
+	&lt;br&gt;
+    &lt;br&gt;	&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;
+	&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;
+	
+	&lt;p&gt;&lt;h3&gt;El agua es una fuente de vida insustituible y fundamental para el desarrollo de la sociedad.
+			Además de ser esencial, el agua es un recurso agotable y cada vez más escaso a escala mundial.
+			Por ello, si logramos disminuir el consumo de agua potable, contribuiremos a preservar el medio
+			ambiente y a mantener la calidad del servicio. Al mismo tiempo, podremos favorecer nuestra 
+			condición de vida y construir un importante vínculo solidario.
+&lt;/h3&gt;&lt;/p&gt;
+			&lt;ol&gt;
+			&lt;p&gt;&lt;h3&gt;Algunos datos de consumo:
+           El consumo de agua necesario por persona para vivir se estima en 80 litros diarios. 
+           Sin embargo en nuestro ámbito de concesión se consumen, en promedio, 300 litros diarios por persona.&lt;p&gt;
+
+&lt;li&gt;&lt;h3&gt;Una canilla abierta verte entre 6 y 7 litrosde agua por minuto.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Las piletas de material tienen entre 50 mil y 70 mil litrosde capacidad de agua.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Las piletas de lona contienen entre 5 mil y 10 mil litrosde agua.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Una canilla que gotea desperdicia 12 mil litrosde agua anuales.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Un tanque de inodoro que pierde agua dilapida entre 34 mil y 80 mil litrospor año.&lt;/h3&gt;
+&lt;/li&gt;	
+			&lt;/ol&gt;
+
+			&lt;div class=&quot;col-md-6&quot;&gt;
+         &lt;img src=&quot;./llave.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+		&lt;h1&gt; Evitemos el derroche de agua potable &lt;/h1&gt;
+		&lt;p&gt; &lt;h3&gt;En verano y los días de calor aumenta la demanda de agua potable y, por tanto, la necesidad
+			    de evitar su derroche. En esta época, además de ser utilizada para ingesta, preparación de
+				alimentos, higiene y quehaceres domiciliarios, comienza a ser usada con mayor frecuencia y 
+				en actividades recreativas,como el llenado de natatorios y piletas de lona.
+                Cabe destacar que al tratarse de un recurso limitado, su abuso por parte de un usuario o un 
+				sector tiene consecuencias para el resto de los consumidores, como menor presión o falta de 
+				agua.
+          &lt;/h3&gt;&lt;/p&gt;
+		
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que la flag HttpOnly está establecida para todas las cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Cookie sin el atributo SameSite</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/Acercade.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1275.html">CWE-1275</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A01_2025-Broken_Access_Control/">OWASP_2025_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Se ha establecido una cookie sin el atributo SameSite, lo que significa que la cookie puede ser enviada como resultado de una solicitud &#39;cross-site&#39;. El atributo SameSite es una medida eficaz para contrarrestar la falsificación de peticiones entre sitios, la inclusión de scripts entre sitios y los ataques de sincronización.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (309 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/Acercade.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/RepWatOriginal/REPFUAGUA/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (368 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Set-Cookie: PHPSESSID=90tcucckf7mjturpm5g0d29s5v; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 3646
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3646 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;.: Inicio :.&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+  &lt;div class=&quot;navbar-header&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-ex1-collapse&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;./menuAdmin.php&quot;&gt;&lt;b&gt;REPFUAGUA&lt;/b&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+        &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+
+         
+        &lt;!--  &lt;li&gt;&lt;a href=&quot;./ver.php&quot;&gt;Lista de Reportes&lt;/a&gt;&lt;/li&gt; 
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt; --&gt;
+        &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+       
+        
+          &lt;li&gt;&lt;a href=&quot;./php/cerrarSesion.php&quot;&gt;Atras&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;	&lt;div class=&quot;container&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-12&quot;&gt;
+	&lt;div class=&quot;text-center&quot;&gt;
+	&lt;br&gt;
+    &lt;br&gt;
+			&lt;h1&gt; Cuidado del agua &lt;/h1&gt;
+			&lt;div class=&quot;col-md-3&quot;&gt;
+         &lt;h3 class=&quot;text-justify&quot;&gt; 
+        &lt;/div&gt;
+       &lt;div class=&quot;col-md-6&quot;&gt;
+         &lt;img src=&quot;./agua4.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+      
+	&lt;/div&gt;	
+	&lt;br&gt;
+    &lt;br&gt;
+	&lt;br&gt;
+    &lt;br&gt;	&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;
+	&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;
+	
+	&lt;p&gt;&lt;h3&gt;El agua es una fuente de vida insustituible y fundamental para el desarrollo de la sociedad.
+			Además de ser esencial, el agua es un recurso agotable y cada vez más escaso a escala mundial.
+			Por ello, si logramos disminuir el consumo de agua potable, contribuiremos a preservar el medio
+			ambiente y a mantener la calidad del servicio. Al mismo tiempo, podremos favorecer nuestra 
+			condición de vida y construir un importante vínculo solidario.
+&lt;/h3&gt;&lt;/p&gt;
+			&lt;ol&gt;
+			&lt;p&gt;&lt;h3&gt;Algunos datos de consumo:
+           El consumo de agua necesario por persona para vivir se estima en 80 litros diarios. 
+           Sin embargo en nuestro ámbito de concesión se consumen, en promedio, 300 litros diarios por persona.&lt;p&gt;
+
+&lt;li&gt;&lt;h3&gt;Una canilla abierta verte entre 6 y 7 litrosde agua por minuto.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Las piletas de material tienen entre 50 mil y 70 mil litrosde capacidad de agua.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Las piletas de lona contienen entre 5 mil y 10 mil litrosde agua.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Una canilla que gotea desperdicia 12 mil litrosde agua anuales.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Un tanque de inodoro que pierde agua dilapida entre 34 mil y 80 mil litrospor año.&lt;/h3&gt;
+&lt;/li&gt;	
+			&lt;/ol&gt;
+
+			&lt;div class=&quot;col-md-6&quot;&gt;
+         &lt;img src=&quot;./llave.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+		&lt;h1&gt; Evitemos el derroche de agua potable &lt;/h1&gt;
+		&lt;p&gt; &lt;h3&gt;En verano y los días de calor aumenta la demanda de agua potable y, por tanto, la necesidad
+			    de evitar su derroche. En esta época, además de ser utilizada para ingesta, preparación de
+				alimentos, higiene y quehaceres domiciliarios, comienza a ser usada con mayor frecuencia y 
+				en actividades recreativas,como el llenado de natatorios y piletas de lona.
+                Cabe destacar que al tratarse de un recurso limitado, su abuso por parte de un usuario o un 
+				sector tiene consecuencias para el resto de los consumidores, como menor presión o falta de 
+				agua.
+          &lt;/h3&gt;&lt;/p&gt;
+		
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese que el atributo SameSite está establecido como &#39;lax&#39; o idealmente &#39;strict&#39; para todas las cookies.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">WSTG-v42-INFO-08</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A01_2025-Broken_Access_Control/">OWASP_2025_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/497.html">CWE-497</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>El servidor de la web/aplicación está divulgando información mediante uno o más encabezados de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;. El acceso a tal información podría facilitarle a los atacantes la identificación de otros marcos/componentes de los que su aplicación web depende y las vulnerabilidades a las que pueden estar sujetos tales componentes.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (244 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (200 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Length: 3025
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3025 bytes)</summary>
+				
+				<pre><code>
+  &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; ng-app=&quot;app&quot;&gt;
+&lt;head&gt;
+ &lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+ &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+ &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+ &lt;title&gt;REPFUAGUA&lt;/title&gt;
+ &lt;!-- Bootstrap --&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/bootstrap.min.css&quot;&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/margenes.css&quot;&gt;
+ &lt;script src=&quot;./controlador/jquery.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;./controlador/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;./controlador/angular.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;header&gt;
+ &lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+     &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#myNavbar&quot;&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;                        
+     &lt;/button&gt;
+     &lt;a class=&quot;navbar-brand&quot; href=&quot;index.php&quot;&gt;REPFUAGUA&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+   &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+      
+   &lt;li&gt;&lt;a href=&quot;Acercade.php&quot;&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;head&gt;
+		&lt;title&gt;.: Inicio :.&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+	&lt;/head&gt;
+
+&lt;body background=&quot;fondo.jpeg&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div id=&quot;content&quot;&gt;
+      
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+         &lt;img src=&quot;./fuga.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+      
+      &lt;div class=&quot;text-center &quot;&gt;
+      &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+        &lt;h2&gt;&lt;b&gt;INICIAR SESION&lt;/b&gt;&lt;/h2&gt;
+        &lt;form class=&quot;form-vertical&quot; action=&quot;./php/logueo.php&quot; method=&quot;POST&quot;&gt;
+          &lt;h1&gt; &lt;/h1&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;col-md-5&quot;&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+       &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+              &lt;input id=&quot;nombre&quot; type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;nombre&quot; placeholder=&quot;Nombre de Usuario&quot;
+                required&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;br&gt;
+    &lt;br&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;col-md-5&quot;&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+       &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-lock&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+              &lt;input id=&quot;pass&quot; type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;pass&quot;
+                placeholder=&quot;Contraseña&quot; required&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;div class=&quot;col-md-4&quot;&gt;
+              &lt;br&gt;
+    &lt;br&gt;
+                &lt;button type=&quot;submit&quot;  class=&quot;btn btn-primary&quot;&gt;&lt;span
+                    class=&quot;glyphicon glyphicon-edit&quot;&gt;&lt;/span&gt; Entrar&lt;/button&gt;
+              &lt;/div&gt;
+              
+            &lt;/div&gt;
+            
+       
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>X-Powered-By: PHP/8.2.12</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que su servidor web, servidor de aplicaciones, balanceador de carga, etc. está configurado para suprimir las cabeceras &quot;X-Powered-By&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-9">Falta encabezado X-Content-Type-Options</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/">OWASP_2025_A02</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La cabecera Anti-MIME-Sniffing X-Content-Type-Options no se ha establecido en &#39;nosniff&#39;. Esto permite que las versiones anteriores de Internet Explorer y Chrome realicen MIME-sniffing en el cuerpo de la respuesta, lo que puede provocar que el cuerpo dé la respuesta se interprete y se muestre como un tipo de contenido distinto del tipo de contenido declarado. Las versiones actuales (principios de 2014) y heredadas de Firefox utilizarán el tipo de contenido declarado (si se establece uno), en lugar de realizar MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Este problema aún se aplica a las páginas de tipo error (401, 403, 500, etc.), ya que esas páginas a menudo se ven afectadas por problemas de inyección, en cuyo caso aún existe la preocupación de que los navegadores husmeen las páginas lejos de su tipo de contenido real.</p>
+
+<p>En el umbral «Alto» esta regla de análisis no alertará sobre respuestas de error del cliente o servidor.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (244 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/ HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (200 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Content-Length: 3025
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3025 bytes)</summary>
+				
+				<pre><code>
+  &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; ng-app=&quot;app&quot;&gt;
+&lt;head&gt;
+ &lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+ &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+ &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+ &lt;title&gt;REPFUAGUA&lt;/title&gt;
+ &lt;!-- Bootstrap --&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/bootstrap.min.css&quot;&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;./css/margenes.css&quot;&gt;
+ &lt;script src=&quot;./controlador/jquery.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;./controlador/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;./controlador/angular.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;header&gt;
+ &lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;navbar-header&quot;&gt;
+     &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#myNavbar&quot;&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;                        
+     &lt;/button&gt;
+     &lt;a class=&quot;navbar-brand&quot; href=&quot;index.php&quot;&gt;REPFUAGUA&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+   &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+      
+   &lt;li&gt;&lt;a href=&quot;Acercade.php&quot;&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;head&gt;
+		&lt;title&gt;.: Inicio :.&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+	&lt;/head&gt;
+
+&lt;body background=&quot;fondo.jpeg&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div id=&quot;content&quot;&gt;
+      
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+         &lt;img src=&quot;./fuga.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+      
+      &lt;div class=&quot;text-center &quot;&gt;
+      &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+        &lt;h2&gt;&lt;b&gt;INICIAR SESION&lt;/b&gt;&lt;/h2&gt;
+        &lt;form class=&quot;form-vertical&quot; action=&quot;./php/logueo.php&quot; method=&quot;POST&quot;&gt;
+          &lt;h1&gt; &lt;/h1&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;col-md-5&quot;&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+       &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+              &lt;input id=&quot;nombre&quot; type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;nombre&quot; placeholder=&quot;Nombre de Usuario&quot;
+                required&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;br&gt;
+    &lt;br&gt;
+          &lt;div class=&quot;form-group&quot;&gt;
+            &lt;div class=&quot;col-md-5&quot;&gt;
+            &lt;div class=&quot;input-group&quot;&gt;
+       &lt;span class=&quot;input-group-addon&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-lock&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+              &lt;input id=&quot;pass&quot; type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;pass&quot;
+                placeholder=&quot;Contraseña&quot; required&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;div class=&quot;col-md-4&quot;&gt;
+              &lt;br&gt;
+    &lt;br&gt;
+                &lt;button type=&quot;submit&quot;  class=&quot;btn btn-primary&quot;&gt;&lt;span
+                    class=&quot;glyphicon glyphicon-edit&quot;&gt;&lt;/span&gt; Entrar&lt;/button&gt;
+              &lt;/div&gt;
+              
+            &lt;/div&gt;
+            
+       
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que la aplicación/servidor web establece el encabezado Content-Type adecuadamente, y que establece el encabezado X-Content-Type-Options a &#39;nosniff&#39; para todas las páginas web.</p>
+
+<p>Si es posible, asegúrese de que el usuario final utiliza un navegador web moderno y compatible con los estándares que no realiza MIME-sniffing en absoluto, o que puede ser dirigido por la aplicación web/servidor web para que no realice MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-11">Gran redirección detectada (posible fuga de información confidencial)</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">POST http://localhost/RepWatOriginal/REPFUAGUA/php/logueo.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A06_2025-Insecure_Design/">OWASP_2025_A06</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A04_2021-Insecure_Design/">OWASP_2021_A04</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/201.html">CWE-201</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>El servidor ha respondido con una redirección que parece proporcionar una respuesta larga. Esto puede indicar que aunque el servidor envió una redirección, también respondió con el contenido del cuerpo (que puede incluir detalles confidenciales, PII, etc.).</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Longitud URI de la cabecera de ubicación: 12 [../index.php].</p>
+
+<p>Tamaño previsto de la respuesta: 312.</p>
+
+<p>Longitud del cuerpo de la respuesta: 331.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (380 bytes)</summary>
+				
+				<pre><code>POST http://localhost/RepWatOriginal/REPFUAGUA/php/logueo.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+content-type: application/x-www-form-urlencoded
+referer: http://localhost/RepWatOriginal/REPFUAGUA/
+content-length: 0
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (226 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Location: ../index.php
+Content-Length: 331
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (331 bytes)</summary>
+				
+				<pre><code>&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  Undefined array key &quot;pass&quot; in &lt;b&gt;C:\xampp\htdocs\RepWatOriginal\REPFUAGUA\php\logueo.php&lt;/b&gt; on line &lt;b&gt;5&lt;/b&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Deprecated&lt;/b&gt;:  md5(): Passing null to parameter #1 ($string) of type string is deprecated in &lt;b&gt;C:\xampp\htdocs\RepWatOriginal\REPFUAGUA\php\logueo.php&lt;/b&gt; on line &lt;b&gt;5&lt;/b&gt;&lt;br /&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que no se filtre información confidencial a través de las respuestas de redirección. Las respuestas de redireccionamiento casi no deben tener contenido.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-12">Inclusión de archivos fuente JavaScript entre dominios</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/ver.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/2025/A08_2025-Software_or_Data_Integrity_Failures/">OWASP_2025_A08</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/2021/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/829.html">CWE-829</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>La página incluye uno o más archivos de script de un dominio de terceros.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (362 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/ver.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/RepWatOriginal/REPFUAGUA/Acercade.php
+Cookie: PHPSESSID=90tcucckf7mjturpm5g0d29s5v
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (337 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302 Found
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Location: ./index.php
+Content-Type: text/html; charset=UTF-8
+content-length: 20489
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (20489 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+	&lt;head&gt;
+&lt;meta http-equiv=&quot;Expires&quot; content=&quot;0&quot;&gt;
+&lt;meta http-equiv=&quot;Last-Modified&quot; content=&quot;0&quot;&gt;
+&lt;meta http-equiv=&quot;Cache-Control&quot; content=&quot;no-cache, mustrevalidate&quot;&gt;
+&lt;meta http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;&gt;
+&lt;title&gt;.: Admin :.&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+		&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js&quot;&gt;&lt;/script&gt;  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css&quot; /&gt;  
+    &lt;script src=&quot;http://code.jquery.com/ui/1.10.3/jquery-ui.js&quot;&gt;&lt;/script&gt;  
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css&quot;&gt;
+	&lt;/head&gt;
+	&lt;body background=&quot;fondo1.jpg&quot;&gt;
+	&lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+  &lt;div class=&quot;navbar-header&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-ex1-collapse&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;./menuAdmin.php&quot;&gt;&lt;b&gt;REPFUAGUA&lt;/b&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+        &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+
+        &lt;li class=&quot;dropdown&quot;&gt;
+     &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;./ver.php&quot;&gt;Reporte &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        
+       &lt;/li&gt;
+
+         
+        
+          &lt;li&gt;&lt;a href=&quot;./tabladeregistros.php&quot;&gt;Registro&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        
+        &lt;ul class=&quot;nav navbar-nav navbar-right&quot; style=&quot;padding-left: 200;&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  Undefined array key &quot;usuario&quot; in &lt;b&gt;C:\xampp\htdocs\RepWatOriginal\REPFUAGUA\navbarAdmin.php&lt;/b&gt; on line &lt;b&gt;28&lt;/b&gt;&lt;br /&gt;
+&lt;/a&gt;&lt;/li&gt; 
+          &lt;li&gt;&lt;a href=&quot;./php/cerrarSesion.php&quot;&gt;Salir&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-md-12&quot;&gt;
+&lt;div class=&quot;text-center&quot;&gt;
+  
+  &lt;br&gt;
+  &lt;br&gt;
+
+		&lt;h2&gt;LISTA DE REPORTES &lt;/h2&gt;
+    &lt;/div&gt;
+&lt;!-- Button trigger modal --&gt;
+&lt;form class=&quot;form-inline&quot; role=&quot;search&quot; id=&quot;buscar&quot;&gt;
+      &lt;div class=&quot;form-group&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;s&quot; class=&quot;form-control&quot; placeholder=&quot;Buscar&quot;&gt;
+      &lt;/div&gt;
+      &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;&amp;nbsp;&lt;i class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/i&gt;&amp;nbsp;&lt;/button&gt;
+  &lt;!--&lt;a data-toggle=&quot;modal&quot; href=&quot;#newModal&quot; class=&quot;btn btn-default&quot;&gt;Agregar&lt;/a&gt;--&gt;
+    &lt;/form&gt;
+
+
+ 
+
+  &lt;!--&lt;Fecha Formulario2&gt;--&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-md-5&quot;&gt;
+				&lt;h3 class = &quot;text-primary&quot;&gt;Búsqueda por fechas &lt;/h3&gt;
+				&lt;label&gt;Desde:&lt;/label&gt;
+				&lt;input type = &quot;text&quot; class = &quot;form-control&quot; placeholder = &quot;Inicio&quot; name=&quot;from_date&quot;  id =&quot;from_date&quot;/&gt;
+				&lt;label&gt;Hasta&lt;/label&gt;
+				&lt;input type = &quot;text&quot; class = &quot;form-control&quot; placeholder = &quot;Final&quot; name=&quot;to_date&quot;  id =&quot;to_date&quot;/&gt;
+				&lt;button type = &quot;button&quot; class = &quot;btn btn-primary&quot; name=&quot;filter&quot; id = &quot;filter&quot;&gt;
+        &lt;span class = &quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/button&gt; 
+        &lt;button type = &quot;button&quot; id = &quot;reset&quot; class = &quot;btn btn-success&quot;&gt;&lt;span class = &quot;glyphicon glyphicon-refresh&quot;&gt;&lt;span&gt;&lt;/button&gt;
+			&lt;/div&gt;
+
+&lt;br&gt;
+  &lt;!-- Modal --&gt;
+  &lt;div class=&quot;modal fade&quot; id=&quot;newModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;newModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot;&gt;
+      &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;
+          &lt;h4 class=&quot;modal-title&quot;&gt;Agregar&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+&lt;form role=&quot;form&quot; method=&quot;post&quot; id=&quot;agregar&quot;&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;name&quot;&gt;Nombre&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;name&quot; required&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;lastname&quot;&gt;Apellido&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;lastname&quot; required&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;address&quot;&gt;Domicilio&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;address&quot; required&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; name=&quot;email&quot; &gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;phone&quot;&gt;Telefono&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;phone&quot; &gt;
+  &lt;/div&gt;
+
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Agregar&lt;/button&gt;
+&lt;/form&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;&lt;!-- /.modal-content --&gt;
+    &lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+  &lt;/div&gt;&lt;!-- /.modal --&gt;
+
+&lt;div id=&quot;tabla&quot;&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;bootstrap/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+	&lt;div id=&quot;tabla_fecha&quot;&gt;
+&lt;table class=&quot;table table-bordered table-hover&quot;&gt;
+&lt;thead&gt;
+    &lt;th&gt;Clave Reporte&lt;/th&gt;
+	&lt;th&gt;No. de Contrato&lt;/th&gt;
+	&lt;th&gt;No. Ext&lt;/th&gt;
+	&lt;th&gt;Dirección&lt;/th&gt;
+	&lt;th&gt;Ubicación&lt;/th&gt;
+	&lt;th&gt;Evidencia&lt;/th&gt;
+	&lt;th&gt;Fecha&lt;/th&gt;
+	&lt;th&gt;Descripción&lt;/th&gt;
+	&lt;th&gt;Status&lt;/th&gt;
+	&lt;th&gt;Usuario&lt;/th&gt;
+	&lt;th&gt;Acciones&lt;/th&gt;
+&lt;/thead&gt;
+&lt;tr&gt;
+	&lt;td&gt;TC-01&lt;/td&gt;
+	&lt;td&gt;9999&lt;/td&gt;
+	&lt;td&gt;1&lt;/td&gt;
+	&lt;td&gt;Prueba TC-01&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/999,-999&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=TC-01&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-10-09 00:00:00&lt;/td&gt;
+	&lt;td&gt;Prueba de rango invalido CWE-20&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;TC-01&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-TC-01&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+TC-01).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+TC-01,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;16209&lt;/td&gt;
+	&lt;td&gt;333&lt;/td&gt;
+	&lt;td&gt;3&lt;/td&gt;
+	&lt;td&gt;C. Escolleras 2356, 95272 Las Escolleras, Ver., México&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.7733059,-95.7491928&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=16209&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-10-08 11:51:38&lt;/td&gt;
+	&lt;td&gt;probando el asíncrono &lt;/td&gt;
+	&lt;td&gt;terminado&lt;/td&gt;
+	&lt;td&gt;carlos_pech&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;16209&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-16209&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+16209).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+16209,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;62098&lt;/td&gt;
+	&lt;td&gt;1234&lt;/td&gt;
+	&lt;td&gt;10&lt;/td&gt;
+	&lt;td&gt;C. Escolleras 2356, 95272 Las Escolleras, Ver., México&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.7733059,-95.7491928&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=62098&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-10-08 11:48:16&lt;/td&gt;
+	&lt;td&gt;Se fuga en la calzada&lt;/td&gt;
+	&lt;td&gt;terminado&lt;/td&gt;
+	&lt;td&gt;carlos_pech&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;62098&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-62098&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+62098).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+62098,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;50840&lt;/td&gt;
+	&lt;td&gt;1111&lt;/td&gt;
+	&lt;td&gt;0&lt;/td&gt;
+	&lt;td&gt;C. Escolleras 2356, 95272 Las Escolleras, Ver., México&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.7733295,-95.7491982&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=50840&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-10-08 11:40:20&lt;/td&gt;
+	&lt;td&gt;se fuga el agua abajo del puente &lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;50840&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-50840&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+50840).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+50840,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN009&lt;/td&gt;
+	&lt;td&gt;11502&lt;/td&gt;
+	&lt;td&gt;5&lt;/td&gt;
+	&lt;td&gt;Calle Hidalgo 201, Col. Centro, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.7695,-95.7611&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN009&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-12 12:00:00&lt;/td&gt;
+	&lt;td&gt;Fuga moderada en la union de la toma domiciliaria con la red principal.&lt;/td&gt;
+	&lt;td&gt;en proceso&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN009&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN009&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN009).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN009,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN008&lt;/td&gt;
+	&lt;td&gt;11390&lt;/td&gt;
+	&lt;td&gt;11&lt;/td&gt;
+	&lt;td&gt;Av. Independencia 340, Col. Reforma, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.7726,-95.75764&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN008&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-11 18:05:00&lt;/td&gt;
+	&lt;td&gt;Fuga nocturna, se escucha el agua correr pero no se ve a simple vista de dia.&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;javier_dzul&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN008&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN008&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN008).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN008,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN007&lt;/td&gt;
+	&lt;td&gt;11278&lt;/td&gt;
+	&lt;td&gt;28&lt;/td&gt;
+	&lt;td&gt;Calle Victoria 77, Col. Ojo de Agua, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.76601,-95.76455&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN007&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-10 10:35:00&lt;/td&gt;
+	&lt;td&gt;Fuga leve junto al jardin, ya se reporto antes pero sigue presente.&lt;/td&gt;
+	&lt;td&gt;terminado&lt;/td&gt;
+	&lt;td&gt;javier_dzul&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN007&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN007&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN007).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN007,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN006&lt;/td&gt;
+	&lt;td&gt;11144&lt;/td&gt;
+	&lt;td&gt;2&lt;/td&gt;
+	&lt;td&gt;Calle Guerrero 56, Col. Centro, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.76905,-95.76175&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN006&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-08 14:10:00&lt;/td&gt;
+	&lt;td&gt;Brota agua de la coladera cercana a la esquina, posible tuberia principal danada.&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;monica_uc&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN006&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN006&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN006).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN006,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN005&lt;/td&gt;
+	&lt;td&gt;11023&lt;/td&gt;
+	&lt;td&gt;19&lt;/td&gt;
+	&lt;td&gt;Calle Abasolo 33, Col. La Palma, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.75872,-95.76788&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN005&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-06 09:50:00&lt;/td&gt;
+	&lt;td&gt;Fuga intermitente que solo se nota por las mananas, cerca del medidor.&lt;/td&gt;
+	&lt;td&gt;en proceso&lt;/td&gt;
+	&lt;td&gt;monica_uc&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN005&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN005&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN005).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN005,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN004&lt;/td&gt;
+	&lt;td&gt;10912&lt;/td&gt;
+	&lt;td&gt;7&lt;/td&gt;
+	&lt;td&gt;Calle Morelos 210, Col. Centro, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.76988,-95.76201&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN004&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-05 16:22:00&lt;/td&gt;
+	&lt;td&gt;Fuga importante que esta afectando el pavimento de la calle, se solicita atencion urgente.&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;carlos_pech&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN004&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN004&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN004).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN004,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN003&lt;/td&gt;
+	&lt;td&gt;10789&lt;/td&gt;
+	&lt;td&gt;45&lt;/td&gt;
+	&lt;td&gt;Calle Zaragoza 88, Col. Ojo de Agua, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.76544,-95.7639&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN003&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-04 07:05:00&lt;/td&gt;
+	&lt;td&gt;Fuga pequena en la llave de paso de la calle, poco caudal pero constante.&lt;/td&gt;
+	&lt;td&gt;terminado&lt;/td&gt;
+	&lt;td&gt;carlos_pech&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN003&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN003&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN003).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN003,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN002&lt;/td&gt;
+	&lt;td&gt;10567&lt;/td&gt;
+	&lt;td&gt;3&lt;/td&gt;
+	&lt;td&gt;Av. Independencia 120, Col. Reforma, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.77215,-95.7582&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN002&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-03 11:40:00&lt;/td&gt;
+	&lt;td&gt;Tuberia rota junto a la toma principal, se nota encharcamiento constante.&lt;/td&gt;
+	&lt;td&gt;en proceso&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN002&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN002&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN002).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN002,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;SN001&lt;/td&gt;
+	&lt;td&gt;10234&lt;/td&gt;
+	&lt;td&gt;12&lt;/td&gt;
+	&lt;td&gt;Calle Hidalgo 45, Col. Centro, 95270 Alvarado, Ver., Mexico&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/18.76931,-95.76147&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=SN001&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;2026-09-02 08:15:00&lt;/td&gt;
+	&lt;td&gt;Fuga visible en la banqueta frente al domicilio, el agua corre hacia la calle desde hace dos dias.&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;SN001&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-SN001&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+SN001).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+SN001,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;TC-04&lt;/td&gt;
+	&lt;td&gt;1111&lt;/td&gt;
+	&lt;td&gt;1&lt;/td&gt;
+	&lt;td&gt;Prueba TC-04&lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;https://www.google.es/maps/place/0,0&quot; target=&quot;_blank&quot;&gt;Localización&lt;/a&gt; &lt;/td&gt;
+	&lt;td&gt;&lt;a href=&quot;./verimagen.php?clave_Reporte=TC-04&quot; target=&quot;_blank&quot;&gt;fotos&lt;/a&gt; &lt;/td&gt;
+
+	&lt;td&gt;0000-00-00 00:00:00&lt;/td&gt;
+	&lt;td&gt;Prueba de exposicion de errores CWE-209&lt;/td&gt;
+	&lt;td&gt;sin revisar&lt;/td&gt;
+	&lt;td&gt;elena_rios&lt;/td&gt;
+	&lt;td style=&quot;width:150px;&quot;&gt;
+		&lt;a data-id=&quot;TC-04&quot; class=&quot;btn btn-edit btn btn-success&quot;&gt;Status&lt;/a&gt;
+		&lt;a href=&quot;#&quot;  id=&quot;del-TC-04&quot; class=&quot;btn btn-sm btn-danger&quot;&gt;Eliminar&lt;/a&gt;
+		&lt;script&gt;
+		$(&quot;#del-&quot;+TC-04).click(function(e){
+			e.preventDefault();
+			p = confirm(&quot;Estas seguro?&quot;);
+			if(p){
+				$.get(&quot;./php/eliminar.php&quot;,&quot;clave_Reporte=&quot;+TC-04,function(data){
+					alert(&quot;Eliminado exitosamente.&quot;);
+					location.reload();
+				});
+			}
+
+		});
+		&lt;/script&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+  &lt;!-- Modal --&gt;
+  &lt;script&gt;
+  	$(&quot;.btn-edit&quot;).click(function(){
+  		id = $(this).data(&quot;id&quot;);
+  		$.get(&quot;./php/formulario.php&quot;,&quot;clave_Reporte=&quot;+id,function(data){
+  			$(&quot;#form-edit&quot;).html(data);
+			  
+  		});
+  		$(&quot;#editModal&quot;).modal(&quot;show&quot;);
+  	});
+
+  &lt;/script&gt;
+  &lt;div class=&quot;modal fade&quot; id=&quot;editModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;editModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot;&gt;
+      &lt;div class=&quot;modal-content&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/button&gt;
+          &lt;h4 class=&quot;modal-title&quot;&gt;Actualizar&lt;/h4&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;div id=&quot;form-edit&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;&lt;!-- /.modal-content --&gt;
+    &lt;/div&gt;&lt;!-- /.modal-dialog --&gt;
+  &lt;/div&gt;&lt;!-- /.modal --&gt;&lt;script&gt;
+
+
+$(&quot;#buscar&quot;).submit(function(e){
+  e.preventDefault();
+  $.post(&quot;./php/busqueda.php&quot;,$(&quot;#buscar&quot;).serialize(),function(data){
+    $(&quot;#tabla&quot;).html(data);
+  $(&quot;#buscar&quot;)[0].reset();
+  });
+});
+
+
+
+
+$(&#39;#reset&#39;).click(function(e){
+  location.reload();
+});
+
+
+  $(&quot;#agregar&quot;).submit(function(e){
+    e.preventDefault();
+    $.post(&quot;./php/agregar.php&quot;,$(&quot;#agregar&quot;).serialize(),function(data){
+    });
+    //alert(&quot;Agregado exitosamente!&quot;);
+    $(&quot;#agregar&quot;)[0].reset();
+    $(&#39;#newModal&#39;).modal(&#39;hide&#39;);
+  });
+  $(document).ready(function(){
+    $.datepicker.setDefaults({
+      dateFormat:&#39;yy-mm-dd&#39;
+    });
+    $(function(){
+      $(&quot;#from_date&quot;).datepicker();
+      $(&quot;#to_date&quot;).datepicker();
+    });
+    $(&#39;#filter&#39;).click(function(){
+      var from_date = $(&#39;#from_date&#39;).val();
+      var to_date = $(&#39;#to_date&#39;).val();
+      if(from_date != &#39;&#39; &amp;&amp; to_date != &#39;&#39;){
+        $.ajax({
+          url:&quot;filtro.php&quot;,
+          method:&quot;POST&quot;,
+          data:{from_date:from_date, to_date:to_date},
+          success:function(data){
+            $(&#39;#tabla_fecha&#39;).html(data);
+          }
+        })
+      }else{
+        alert(&quot;Seleccione fecha&quot;);
+      }
+    });
+  });
+&lt;/script&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js&quot;&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Asegúrese de que los archivos fuente JavaScript se cargan solo desde fuentes de confianza, y que las fuentes no pueden ser controladas por los usuarios finales de la aplicación.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informativo</span>, <span>Confidence</span>=<span
+							class="confidence-level">Media</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">http://localhost</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-13">Aplicación Web Moderna</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/menuAdmin.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic">SYSTEMIC</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The application appears to be a modern web application. If you need to explore it automatically then the Client Spider may well be more effective than the standard one.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>Se han encontrado enlaces que no tienen atributos href tradicionales, lo que indica que se trata de una aplicación web moderna.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (368 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/menuAdmin.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/RepWatOriginal/REPFUAGUA/Acercade.php
+Cookie: PHPSESSID=90tcucckf7mjturpm5g0d29s5v
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (310 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 2607
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (2607 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;.: Inicio :.&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+	&lt;/head&gt;
+	&lt;body background=&quot;fondo.jpeg&quot;&gt;
+	&lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+  &lt;div class=&quot;navbar-header&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-ex1-collapse&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;./menuAdmin.php&quot;&gt;&lt;b&gt;REPFUAGUA&lt;/b&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+        &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+
+        &lt;li class=&quot;dropdown&quot;&gt;
+     &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;./ver.php&quot;&gt;Reporte &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        
+       &lt;/li&gt;
+
+         
+        
+          &lt;li&gt;&lt;a href=&quot;./tabladeregistros.php&quot;&gt;Registro&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        
+        &lt;ul class=&quot;nav navbar-nav navbar-right&quot; style=&quot;padding-left: 200;&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  Undefined array key &quot;usuario&quot; in &lt;b&gt;C:\xampp\htdocs\RepWatOriginal\REPFUAGUA\navbarAdmin.php&lt;/b&gt; on line &lt;b&gt;28&lt;/b&gt;&lt;br /&gt;
+&lt;/a&gt;&lt;/li&gt; 
+          &lt;li&gt;&lt;a href=&quot;./php/cerrarSesion.php&quot;&gt;Salir&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;	&lt;div class=&quot;container&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-12&quot;&gt;
+	&lt;div class=&quot;text-center&quot;&gt;
+		&lt;br&gt;
+		&lt;br&gt;
+		&lt;h1&gt; MENU DE USUARIO DE ADMINISTRADOR &lt;/h1&gt;
+			&lt;div class=&quot;col-md-7&quot;&gt;
+         &lt;h3 class=&quot;text-justify&quot;&gt; 
+        &lt;/div&gt;
+       &lt;div class=&quot;col-md-8&quot;&gt;
+         &lt;img src=&quot;./fuga5.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+	&lt;/div&gt;	
+		
+			&lt;p&gt;&lt;h2&gt;Instrucciones:&lt;h2&gt;&lt;/p&gt;
+			&lt;ol&gt;
+				&lt;h3&gt;&lt;li&gt;Ir a la opcion Lista de Reportes de usuarios.&lt;/li&gt;
+				&lt;li&gt;Seleccionar reporte para dar seguimiento.&lt;/li&gt;
+				&lt;li&gt;El administrador tendra para cambiar el status del reporte.&lt;/li&gt;
+				&lt;li&gt;El administrador podra eleminar reporte si es necesario.&lt;/li&gt;
+				&lt;li&gt;El administrador podra agregar a uno nuevo si es necesario.&lt;/li&gt;
+&lt;/h3&gt;&lt;/ol&gt;
+&lt;br&gt;
+		&lt;br&gt;
+&lt;div class=&quot;col-md-20&quot;&gt;
+&lt;h3 class=&quot;text-justify&quot;&gt; 
+         
+	
+        &lt;/div&gt;
+			&lt;!--&lt;br&gt;
+			&lt;ul type=&quot;none&quot;&gt;
+			&lt;li&gt;&lt;i class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/i&gt; Facil de instalar y modificar&lt;/li&gt;
+			&lt;li&gt;&lt;i class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/i&gt; Ideal para tu proximo proyecto web&lt;/li&gt;
+			&lt;/ul&gt;--&gt;
+		
+
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>&lt;a href=&quot;#&quot;&gt;&lt;br /&gt;
+&lt;b&gt;Warning&lt;/b&gt;:  Undefined array key &quot;usuario&quot; in &lt;b&gt;C:\xampp\htdocs\RepWatOriginal\REPFUAGUA\navbarAdmin.php&lt;/b&gt; on line &lt;b&gt;28&lt;/b&gt;&lt;br /&gt;
+&lt;/a&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Se trata de una alerta informativa, por lo que no es necesario realizar ningún cambio.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-14">Respuesta de Gestión de Sesión Identificada</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET http://localhost/RepWatOriginal/REPFUAGUA/Acercade.php</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Se ha identificado que la respuesta dada contiene un token de gestión de sesión. El campo &#39;Other Info&#39; contiene un conjunto de tokens de cabecera que pueden utilizarse en el método Header Based Session Management (gestión de sesión basado en cabecera). Si la petición se encuentra en un contexto que tiene un método Session Management establecido en &quot;Auto-Detect&quot;, esta regla cambiará la gestión de sesión para utilizar los tokens identificados.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:PHPSESSID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (309 bytes)</summary>
+				
+				<pre><code>GET http://localhost/RepWatOriginal/REPFUAGUA/Acercade.php HTTP/1.1
+host: localhost
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: http://localhost/RepWatOriginal/REPFUAGUA/
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (368 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Date: Wed, 21 Oct 2026 16:53:31 GMT
+Server: Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12
+X-Powered-By: PHP/8.2.12
+Set-Cookie: PHPSESSID=90tcucckf7mjturpm5g0d29s5v; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 3646
+Content-Type: text/html; charset=UTF-8
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (3646 bytes)</summary>
+				
+				<pre><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;.: Inicio :.&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bootstrap/css/bootstrap.min.css&quot;&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot; role=&quot;navigation&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+  &lt;div class=&quot;navbar-header&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-ex1-collapse&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;./menuAdmin.php&quot;&gt;&lt;b&gt;REPFUAGUA&lt;/b&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;
+        &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+
+         
+        &lt;!--  &lt;li&gt;&lt;a href=&quot;./ver.php&quot;&gt;Lista de Reportes&lt;/a&gt;&lt;/li&gt; 
+          &lt;li&gt;&lt;a href=&quot;&quot;&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt; --&gt;
+        &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+       
+        
+          &lt;li&gt;&lt;a href=&quot;./php/cerrarSesion.php&quot;&gt;Atras&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;	&lt;div class=&quot;container&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-12&quot;&gt;
+	&lt;div class=&quot;text-center&quot;&gt;
+	&lt;br&gt;
+    &lt;br&gt;
+			&lt;h1&gt; Cuidado del agua &lt;/h1&gt;
+			&lt;div class=&quot;col-md-3&quot;&gt;
+         &lt;h3 class=&quot;text-justify&quot;&gt; 
+        &lt;/div&gt;
+       &lt;div class=&quot;col-md-6&quot;&gt;
+         &lt;img src=&quot;./agua4.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+      
+	&lt;/div&gt;	
+	&lt;br&gt;
+    &lt;br&gt;
+	&lt;br&gt;
+    &lt;br&gt;	&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;
+	&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;br&gt;
+	
+	&lt;p&gt;&lt;h3&gt;El agua es una fuente de vida insustituible y fundamental para el desarrollo de la sociedad.
+			Además de ser esencial, el agua es un recurso agotable y cada vez más escaso a escala mundial.
+			Por ello, si logramos disminuir el consumo de agua potable, contribuiremos a preservar el medio
+			ambiente y a mantener la calidad del servicio. Al mismo tiempo, podremos favorecer nuestra 
+			condición de vida y construir un importante vínculo solidario.
+&lt;/h3&gt;&lt;/p&gt;
+			&lt;ol&gt;
+			&lt;p&gt;&lt;h3&gt;Algunos datos de consumo:
+           El consumo de agua necesario por persona para vivir se estima en 80 litros diarios. 
+           Sin embargo en nuestro ámbito de concesión se consumen, en promedio, 300 litros diarios por persona.&lt;p&gt;
+
+&lt;li&gt;&lt;h3&gt;Una canilla abierta verte entre 6 y 7 litrosde agua por minuto.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Las piletas de material tienen entre 50 mil y 70 mil litrosde capacidad de agua.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Las piletas de lona contienen entre 5 mil y 10 mil litrosde agua.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Una canilla que gotea desperdicia 12 mil litrosde agua anuales.&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Un tanque de inodoro que pierde agua dilapida entre 34 mil y 80 mil litrospor año.&lt;/h3&gt;
+&lt;/li&gt;	
+			&lt;/ol&gt;
+
+			&lt;div class=&quot;col-md-6&quot;&gt;
+         &lt;img src=&quot;./llave.jpg&quot; class=&quot;img-responsive&quot;&gt;
+        &lt;/div&gt;
+		&lt;h1&gt; Evitemos el derroche de agua potable &lt;/h1&gt;
+		&lt;p&gt; &lt;h3&gt;En verano y los días de calor aumenta la demanda de agua potable y, por tanto, la necesidad
+			    de evitar su derroche. En esta época, además de ser utilizada para ingesta, preparación de
+				alimentos, higiene y quehaceres domiciliarios, comienza a ser usada con mayor frecuencia y 
+				en actividades recreativas,como el llenado de natatorios y piletas de lona.
+                Cabe destacar que al tratarse de un recurso limitado, su abuso por parte de un usuario o un 
+				sector tiene consecuencias para el resto de los consumidores, como menor presión o falta de 
+				agua.
+          &lt;/h3&gt;&lt;/p&gt;
+		
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Se trata de una alerta informativa y no de una vulnerabilidad, por lo que no hay nada que corregir.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Ausencia de Tokens Anti-CSRF</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10202/">Ausencia de Tokens Anti-CSRF</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/352.html">352</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>9</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://cwe.mitre.org/data/definitions/352.html">https://cwe.mitre.org/data/definitions/352.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Cabecera Content Security Policy (CSP) no configurada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Cabecera Content Security Policy (CSP) no configurada</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP">https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Divulgación de error de aplicación</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90022/">Divulgación de error de aplicación</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/550.html">550</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Falta atributo de integridad de recursos secundarios</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90003/">Falta atributo de integridad de recursos secundarios</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/345.html">345</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity">https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Falta de cabecera Anti-Clickjacking</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Cabecera Anti-Clickjacking</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Cookie Sin Flag HttpOnly</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10010/">Cookie Sin Flag HttpOnly</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1004.html">1004</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-community/HttpOnly">https://owasp.org/www-community/HttpOnly</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Cookie sin el atributo SameSite</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10054/">Cookie sin el atributo SameSite</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1275.html">1275</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site">https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-cookie-same-site</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10037/">El servidor divulga información mediante un campo(s) de encabezado de respuesta HTTP &#39;&#39;&#39;&#39;X-Powered-By&#39;&#39;&#39;&#39;</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework">https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-8">
+						<h4>El servidor filtra información de versión a través del campo &quot;Server&quot; del encabezado de respuesta HTTP</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10036/">Cabecera de Respuesta del Servidor HTTP</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://httpd.apache.org/docs/current/mod/core.html#servertokens">https://httpd.apache.org/docs/current/mod/core.html#servertokens</a></li>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)">https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff648552(v=pandp.10)</a></li>
+										<li><a
+											href="https://www.troyhunt.com/shhh-dont-let-your-response-headers/">https://www.troyhunt.com/shhh-dont-let-your-response-headers/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-9">
+						<h4>Falta encabezado X-Content-Type-Options</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">Falta encabezado X-Content-Type-Options</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)">https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-10">
+						<h4>Fuga de información en el Banner de la Página</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10009/">Fuga de información en el Banner de la Página</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/497.html">497</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-11">
+						<h4>Gran redirección detectada (posible fuga de información confidencial)</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10044/">Gran redirección detectada (posible fuga de información confidencial)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/201.html">201</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-12">
+						<h4>Inclusión de archivos fuente JavaScript entre dominios</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10017/">Inclusión de archivos fuente JavaScript entre dominios</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/829.html">829</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-13">
+						<h4>Aplicación Web Moderna</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10109/">Aplicación Web Moderna</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-14">
+						<h4>Respuesta de Gestión de Sesión Identificada</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Respuesta de Gestión de Sesión Identificada</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+

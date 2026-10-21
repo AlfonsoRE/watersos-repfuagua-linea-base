@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/toolbar"
+    tools:context=".Activities.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/degradado"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="642dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abril_fatface"
+                android:gravity="center"
+                android:paddingLeft="-22dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:text="WaterSOS"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/design_default_color_background"
+                android:textSize="45sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="225dp"
+                android:layout_height="172dp"
+                android:layout_marginBottom="40dp"
+                android:background="@android:drawable/zoom_plate"
+                android:paddingRight="45dp"
+                app:srcCompat="@mipmap/idea"
+                tools:srcCompat="@mipmap/idea" />
+
+            <EditText
+                android:id="@+id/edtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:drawable/progress_horizontal"
+                android:backgroundTint="@android:color/background_light"
+                android:drawableLeft="@mipmap/user"
+                android:ems="10"
+                android:hint=" Usuario"
+                android:inputType="textPersonName"
+                android:paddingLeft="8dp"
+                android:paddingTop="2dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textColorHighlight="@color/design_default_color_on_secondary"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:drawable/progress_horizontal"
+                android:backgroundTint="@android:color/background_light"
+                android:drawableLeft="@mipmap/password"
+                android:ems="10"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingTop="2dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textColorHighlight="@color/design_default_color_on_secondary"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:drawable/progress_horizontal"
+                android:backgroundTint="@color/toolbar"
+                android:drawableStart="@drawable/iniciar_sesion"
+                android:paddingLeft="30dp"
+                android:paddingRight="45dp"
+                android:shadowColor="@color/design_default_color_on_secondary"
+                android:text="Iniciar Sesión"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnCuenta"
+                android:layout_width="249dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:drawable/progress_horizontal"
+                android:backgroundTint="@color/toolbar"
+                android:drawableStart="@drawable/agregar_usuario"
+                android:paddingLeft="30dp"
+                android:paddingRight="40dp"
+                android:text="Crear Cuenta"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="toolbar">#0082FF</color>
+    <color name="f">#312B2A</color>
+    <color name="l">#292424</color>
+    <color name="gfgf">#424242</color>
+    <color name="ssaf">#242020</color>
+</resources>

@@ -1,0 +1,18 @@
+<?php
+include 'conexion.php';
+
+$usu_usuario = $_GET['usuario']; 
+
+$consulta = "SELECT * FROM reporte where usuario = '$usu_usuario'";
+$resultado = $db ->query($consulta);
+
+$producto = array();
+
+while($fila =$resultado ->fetch_array()){
+   
+    $producto[]= $fila;
+}
+
+echo json_encode($producto, JSON_UNESCAPED_UNICODE);
+$resultado ->close();
+?>

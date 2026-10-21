@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/pagina_de_inicio"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_Reportar2"
+            android:icon="@mipmap/contract"
+            android:title="Reportar" />
+        <item
+            android:id="@+id/nav_Clima2"
+            android:icon="@mipmap/clima"
+            android:title="Clima" />
+        <item
+            android:id="@+id/nav_misReportes"
+            android:icon="@mipmap/folder"
+            android:title="Mis reportes" />
+
+    </group>
+
+    <item android:title="Acerca de nosotros">
+        <menu>
+            <item
+                android:id="@+id/aqua"
+                android:icon="@drawable/acerca_de"
+                android:title="Acerca de WaterSOS..." />
+
+            <item
+                android:id="@+id/cerrarLogin"
+                android:icon="@mipmap/apagar"
+                android:title="Cerrar sesión" />
+
+        </menu>
+    </item>
+</menu>

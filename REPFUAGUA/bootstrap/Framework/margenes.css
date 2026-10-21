@@ -1,0 +1,32 @@
+html
+{
+    position: relative; 
+    min-height: 100%;
+}
+
+#page {
+    margin:0px auto;
+    width:100%;
+}
+
+#content{
+    height:100%;
+    overflow:auto;
+    padding: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer.page-footer {
+    background-color: #DF0609;
+    color:white;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 65px;
+}
+nav.navbar {
+    background-color: #0d47a1;
+}
+
+body {background-color: ligthblue;}

@@ -1,0 +1,211 @@
+package com.example.watersos.SQLite;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+
+import androidx.annotation.Nullable;
+
+import com.example.watersos.Objetos.Foto;
+import com.example.watersos.Objetos.Reporte;
+
+import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+
+public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
+
+    public AdminSQLiteOpenHelper(@Nullable Context context) {
+        super(context, "Reporte.db", null, 1);
+    }
+
+    //creamos las tablas de la base de datos
+    @Override
+    public void onCreate(SQLiteDatabase BaseDeDatos) {
+        //creamos una tabla usuario con sus atributos
+        BaseDeDatos.execSQL("create table usuario" +
+                "(usuario text primary key ," +
+                "nombre text," +
+                "contraseña text," +
+                "email text," +
+                "rol enum," +
+                "status timyint)");
+
+        //creamos una tabla foto con sus atributos
+        BaseDeDatos.execSQL("create table foto" +
+                "(clave_Reporte text PRIMARY KEY," +
+                "foto blob," +
+                "foreign key(clave_Reporte)references reporte(clave_Reporte))");
+
+        //creamos una tabla Reporte con sus atributos
+        BaseDeDatos.execSQL("create table reporte" +
+                "(clave_Reporte text primary key," +
+                "NO_Contrato INTEGER," +
+                "NO_Ext INTEGER, " +
+                "direccion text," +
+                "latitud double," +
+                "longitud double," +
+                "fecha datatime," +
+                "descripcion text," +
+                "seguimiento text," +
+                "Usuario text," +
+                "estatus INTEGER,"+
+                "foreign key(Usuario)references usuario(usuario))");
+    }
+
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+    }
+
+    //metodo para insertar los datos en la tabla reporte
+    public  boolean insertarReporte(Reporte reporte){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues content = new ContentValues();
+
+        content.put("clave_Reporte", reporte.getClave_Reporte());
+        content.put("NO_Contrato", reporte.getNO_Contrato());
+        content.put("NO_Ext", reporte.getNO_Ext());
+        content.put("direccion", reporte.getDireccion());
+        content.put("latitud", reporte.getLatitud());
+        content.put("longitud", reporte.getLongitud());
+        content.put("fecha", reporte.getFecha());
+        content.put("descripcion", reporte.getDescripcion());
+        content.put("seguimiento", reporte.getSeguimiento());
+        content.put("Usuario", reporte.getUsuario());
+        content.put("estatus", reporte.getEstatus());
+
+        Long ins = db.insert("reporte",null,content);
+        if (ins==-1) return false;
+        else return true;
+
+    }
+    //metodo para insertar los datos en la tabla foto
+    public  boolean insertarFoto(Foto foto){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues content = new ContentValues();
+
+        Bitmap bitmap = foto.getFoto();
+        ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG,100,byteArray);
+        byte[] img = byteArray.toByteArray();
+
+
+        content.put("clave_Reporte", foto.getClave_Reporte());
+        content.put("foto", img);
+
+
+
+        Long ins = db.insert("foto",null,content);
+        if (ins==-1) return false;
+        else return true;
+
+    }
+
+    //metodo para consegir los reportes de la tabla reportes
+    public ArrayList<Reporte> mostraReportes(){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ArrayList<Reporte> listaReporte = new ArrayList<>();
+
+        Cursor cursor = null;
+
+        cursor = db.rawQuery("select * from reporte",null);
+
+        while (cursor.moveToNext()){
+            String clave_Reporte =cursor.getString(0);
+            int NO_Contrato = cursor.getInt(1);
+            int NO_Ext = cursor.getInt(2);
+            String direccion = cursor.getString(3);
+            double latitud = cursor.getDouble(4);
+            double longitud =cursor.getDouble(5);
+            String fecha = cursor.getString(6);
+            String descripcion = cursor.getString(7);
+            String seguimiento = cursor.getString(8);
+            String usuario = cursor.getString(9);
+            int estatus = cursor.getInt(10);
+
+            listaReporte.add(new Reporte(clave_Reporte,direccion,fecha,descripcion,seguimiento,usuario,NO_Contrato,NO_Ext,estatus,latitud,longitud));
+
+        }
+        cursor.close();
+        return listaReporte;
+    }
+
+    //conseguimos la imagen de la base de datos
+    public Bitmap conseguirImagen (String clave){
+        SQLiteDatabase db= this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("select * from foto where clave_Reporte=? ",new String[]{clave});
+        cursor.moveToFirst();
+
+        byte[] bitmap = cursor.getBlob(1);
+        Bitmap imagen = BitmapFactory.decodeByteArray(bitmap,0 ,bitmap.length);
+        return imagen;
+    }
+
+    //actualizamos el estatus del reporte
+    public void actualizarEstatus (String clave){
+        SQLiteDatabase db= this.getWritableDatabase();
+        if (db!=null) {
+            db.execSQL("update reporte set estatus = '1' where clave_Reporte =?", new String[]{clave});
+            db.close();
+        }
+    }
+
+    //conseguimos los reportes que se status es 0
+    public ArrayList<Reporte> verificarStatus(){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ArrayList<Reporte> listaReporte = new ArrayList<>();
+
+        Cursor cursor = null;
+
+        cursor = db.rawQuery("select * from reporte where estatus=0",null);
+
+        while (cursor.moveToNext()){
+            String clave_Reporte =cursor.getString(0);
+            int NO_Contrato = cursor.getInt(1);
+            int NO_Ext = cursor.getInt(2);
+            String direccion = cursor.getString(3);
+            double latitud = cursor.getDouble(4);
+            double longitud =cursor.getDouble(5);
+            String fecha = cursor.getString(6);
+            String descripcion = cursor.getString(7);
+            String seguimiento = cursor.getString(8);
+            String usuario = cursor.getString(9);
+            int estatus = cursor.getInt(10);
+
+            listaReporte.add(new Reporte(clave_Reporte,direccion,fecha,descripcion,seguimiento,usuario,NO_Contrato,NO_Ext,estatus,latitud,longitud));
+
+        }
+        cursor.close();
+        return listaReporte;
+    }
+
+    //borramos los datos de la tabla de reporte
+    public void borrarDatosTablaReporte(){
+        SQLiteDatabase db= this.getWritableDatabase();
+        if (db!=null) {
+            db.delete("reporte",null,null);
+            db.close();
+        }
+    }
+
+    //borramos los datos de la tabla foto
+    public void borrarDatosTablaFoto(){
+        SQLiteDatabase db= this.getWritableDatabase();
+        if (db!=null) {
+            db.delete("foto",null,null);
+            db.close();
+        }
+    }
+
+
+
+
+
+}
